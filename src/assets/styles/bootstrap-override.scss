@@ -1,0 +1,17 @@
+.list-group-item {
+  border: 1px solid #d4dae7;
+
+  &:hover {
+    background-color: #f8f8fa;
+    border: 1px solid #c0c6d3;
+  }
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}

@@ -1,0 +1,55 @@
+@import "../../../../assets/styles/variables";
+
+.btn {
+  border-radius: 3px;
+
+  i {
+    margin-left: $space-xs;
+    font-size: 0.9rem;
+  }
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+
+  &:hover {
+    background-color: lighten($color-primary, 3%);
+    border: 1px solid lighten($color-primary, 3%);
+  }
+}
+
+.btn-danger {
+  background-color: $color-danger;
+
+  &:hover {
+    background-color: lighten($color-danger, 3%);
+  }
+}
+
+.btn-outline {
+  border-width: 1px;
+  border-style: solid;
+  background-color: transparent;
+
+  &.btn-primary {
+    color: $color-primary;
+    border-color: $color-primary;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &.btn-danger {
+    color: $color-danger;
+    border-color: $color-danger;
+
+    &:hover {
+      background-color: $color-danger;
+      color: #fff;
+    }
+  }
+}

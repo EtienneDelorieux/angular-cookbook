@@ -1,0 +1,33 @@
+@import "../../../assets/styles/variables";
+
+header {
+  background-color: $color-dark;
+  display: flex;
+  justify-content: space-between;
+  padding: $space-s;
+}
+
+.site__logo {
+  font-family: $font-secondary;
+  font-weight: 900;
+
+  a {
+    color: #fff;
+  }
+}
+
+.site__nav {
+  & > a,
+  .dropdown > a {
+    color: #d1d1d1;
+    margin-left: $space-l;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+}

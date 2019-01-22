@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/variables";
+
+.shopping__new-ingredient {
+  app-button {
+    margin-right: $space-m;
+  }
+}
+
+.invalid-feedback {
+  display: inline-block;
+}

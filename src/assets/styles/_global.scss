@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #eaeffa;
+  color: $color-dark;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-secondary;
+  font-weight: 900;
+  color: $color-dark;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+a {
+  transition: $transition;
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

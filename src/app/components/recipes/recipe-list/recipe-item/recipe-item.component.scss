@@ -1,0 +1,12 @@
+@import "../../../../../assets/styles/variables";
+
+.recipe__preview {
+  p {
+    margin-bottom: 0;
+    color: $color-dark
+  }
+}
+
+.recipe__thumbnail {
+  max-height: 50px;
+}
