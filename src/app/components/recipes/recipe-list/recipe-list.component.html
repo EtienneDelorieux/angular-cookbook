@@ -1,13 +1,19 @@
 <div class="row">
   <div class="col-md-12">
-    <app-button content="New Recipe" classes="btn-primary" icon="plus"></app-button>
+    <app-button
+      content="New Recipe"
+      classes="btn-primary"
+      icon="plus"
+      (click)="displayNewRecipeForm()"
+    ></app-button>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
     <app-recipe-item
-      *ngFor="let recipeItem of recipes"
+      *ngFor="let recipeItem of recipes; let recipeId = index"
       [recipe]="recipeItem"
+      [id]="recipeId"
     ></app-recipe-item>
   </div>
 </div>

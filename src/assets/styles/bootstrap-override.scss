@@ -1,3 +1,5 @@
+@import "variables";
+
 .list-group-item {
   border: 1px solid #d4dae7;
 
@@ -14,4 +16,21 @@
 
 .dropdown.show .dropdown-menu {
   display: block;
+}
+
+.btn {
+  i {
+    margin-left: 4px;
+    font-size: 0.9rem;
+  }
+}
+
+.btn-primary:not(.btn-outline) {
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+
+  &:hover {
+    background-color: lighten($color-primary, 3%);
+    border: 1px solid lighten($color-primary, 3%);
+  }
 }

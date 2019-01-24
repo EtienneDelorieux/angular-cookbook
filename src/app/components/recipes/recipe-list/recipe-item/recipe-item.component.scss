@@ -5,6 +5,16 @@
     margin-bottom: 0;
     color: $color-dark
   }
+
+  &.active {
+    background-color: $color-primary;
+    border-color:  $color-primary;
+
+    p,
+    h3 {
+      color: #fff;
+    }
+  }
 }
 
 .recipe__thumbnail {

@@ -22,12 +22,17 @@ header {
     color: #d1d1d1;
     margin-left: $space-l;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: #fff;
     }
   }
 
   .dropdown {
     display: inline-block;
+  }
+
+  .dropdown-menu {
+    left: -16px;
   }
 }

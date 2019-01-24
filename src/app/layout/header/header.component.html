@@ -1,13 +1,12 @@
 <header>
   <div class="site__logo">
-    <a href="#">Cookbook.</a>
+    <a routerLink="/">Cookbook.</a>
   </div>
   <nav class="site__nav">
-    <a href="#" (click)="onSelect('recipe')">Recipes</a>
-    <a href="#" (click)="onSelect('shoppingList')">Shopping List</a>
+    <a routerLink="/recipes" routerLinkActive="active">Recipes</a>
+    <a routerLink="/shopping-list" routerLinkActive="active">Shopping List</a>
     <div class="dropdown" appDropdown>
       <a
-        href="#"
         class="dropdown-toggle"
         role="button"
         data-toggle="dropdown"
@@ -15,10 +14,10 @@
       >Manage Data</a>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
         <li>
-          <a href="#" class="dropdown-item">Save Data</a>
+          <a class="dropdown-item">Save Data</a>
         </li>
         <li>
-          <a href="#" class="dropdown-item">Fetch Data</a>
+          <a class="dropdown-item">Fetch Data</a>
         </li>
       </ul>
     </div>
