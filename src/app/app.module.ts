@@ -40,8 +40,8 @@ import { RecipeEditComponent } from './components/recipes/recipe-edit/recipe-edi
     RecipeEditComponent,
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     FormsModule,
     ReactiveFormsModule
   ],
